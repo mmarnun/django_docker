@@ -4,4 +4,4 @@ RUN pip install --root-user-action=ignore --upgrade pip && pip install --root-us
 COPY django_tutorial /usr/local
 COPY docker-entrypoint.sh /usr/local/
 RUN chmod +x /usr/local/docker-entrypoint.sh
-ENTRYPOINT ["/usr/local/docker-entrypoint.sh"]
+CMD /usr/local/docker-entrypoint.sh
